@@ -1,0 +1,203 @@
+body {
+  /* variables */
+  --greenCol: radial-gradient(circle, rgba(33,117,102,1) 0%, rgba(4,4,4,1) 55%);
+  --salatCol: rgba(15, 235, 158, 0.9);
+  --fontOpenSansLight:  300 1rem/1.4 'Open Sans', sans-serif;
+  --fontOpenSansNormal:  400 1rem/1.4 'Open Sans', sans-serif;
+  --fontOpenSansBolder:  600 1rem/1.4 'Open Sans', sans-serif;
+  --fontOpenSansBold:  800 1rem/1.4 'Open Sans', sans-serif;
+  --fontPacifico:  400 2rem/1.4 'Pacifico', cursive;
+  /* classes */
+  background-color: var(--white);
+  font: var(--fontOpenSansNormal);
+  margin: 0 auto;
+}
+
+@font-face {
+  body {
+    font-family: 'Open Sans';
+    src: url("/fonts/Open_Sans/OpenSans-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+@font-face {
+  body {
+    font-family: 'Open Sans';
+    src: url("/fonts/Open_Sans/OpenSans-SemiBold.ttf");
+    font-weight: 600;
+    font-style: normal;
+  }
+}
+
+@font-face {
+  body {
+    font-family: 'Open Sans';
+    src: url("/fonts/Open_Sans/OpenSans-ExtraBold.ttf");
+    font-weight: 800;
+    font-style: normal;
+  }
+}
+
+@font-face {
+  body {
+    font-family: 'Open Sans';
+    src: url("/fonts/Open_Sans/OpenSans-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+  }
+}
+
+@font-face {
+  body {
+    font-family: 'Pacifico';
+    src: url("/fonts/Pacifico/Pacifico-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+body .contentContainer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+body .contentContainer .innerContainer {
+  width: 85%;
+  margin: 0 auto;
+}
+
+body .BrandiClass {
+  font: var(--fontPacifico);
+  letter-spacing: 1.4px;
+}
+
+body .navText {
+  font: var(--fontOpenSansNormal);
+  letter-spacing: 0.65px;
+  color: #ffffff;
+}
+
+body .horizLine {
+  width: 10%;
+  height: 1px;
+  background-color: var(--salatCol);
+}
+
+body .container {
+  width: 1600px;
+}
+
+body .container header {
+  position: relative;
+}
+
+body .container header .contentContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+body .container header .contentContainer .innerContainer {
+  height: 100%;
+}
+
+body .container header .contentContainer .innerContainer .navbar {
+  width: 100%;
+}
+
+body .container header .contentContainer .innerContainer .navbar .collapse .navbar-nav .nav-item .nav-link {
+  color: var(--white);
+}
+
+body .container header .contentContainer .innerContainer .contents p:first-child {
+  font-size: 62px;
+  letter-spacing: 3px;
+}
+
+body .container header .contentContainer .innerContainer .contents p:first-child span {
+  font: var(--fontOpenSansBold);
+  font-size: 62px;
+}
+
+body .container header .contentContainer .innerContainer .contents p:nth-child(2) {
+  font: var(--fontOpenSansLight);
+  opacity: 0.9;
+  font-size: 48px;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 3px;
+}
+
+body .container header .contentContainer .innerContainer .contents p:nth-child(2) span {
+  color: var(--salatCol);
+}
+
+body .container header .contentContainer .innerContainer .contents div .teamDescrip {
+  opacity: 0.9;
+  font: var(--fontOpenSansLight);
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 2rem;
+}
+
+body .container header .contentContainer .innerContainer .fontawesomeIcons {
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: color 1.5s linear;
+  transition: color 1.5s linear;
+  font-size: 18px;
+}
+
+body .container header .contentContainer .innerContainer .fontawesomeIcons .fa {
+  margin: 0 1rem;
+}
+
+body .container header .contentContainer .innerContainer .fontawesomeIcons .fa:hover {
+  color: white;
+}
+
+body .container header #carouselExampleIndicators {
+  z-index: -1;
+}
+
+body .container header #carouselExampleIndicators .carousel-indicators {
+  left: auto;
+  margin-right: 2%;
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  gap: 1rem;
+}
+
+body .container header #carouselExampleIndicators .carousel-indicators li {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid var(--white);
+}
+
+body .container header #carouselExampleIndicators .carousel-indicators li.active {
+  background-color: white;
+}
+
+body .container header #carouselExampleIndicators .carousel-inner {
+  height: 800px;
+}
+
+body .container header #carouselExampleIndicators::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(33, 117, 102, 0.65) 0%, rgba(4, 4, 4, 0.9) 75%);
+}
+
+body .container header #carouselExampleIndicators .carousel-control-next, body .container header #carouselExampleIndicators .carousel-control-prev {
+  opacity: 0;
+}
+/*# sourceMappingURL=style.css.map */
